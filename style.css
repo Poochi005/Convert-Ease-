@@ -1,0 +1,258 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+    transition: .3s;
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+    background: linear-gradient(90deg, #0d47a1, #1e3cba);
+}
+
+.navbar-brand {
+    line-height: 1.1;
+}
+
+.navbar-brand small {
+    font-size: 13px;
+    color: #d8e4ff;
+}
+
+.nav-link {
+    color: #fff!important;
+    margin: 0 6px;
+    border-radius: 8px;
+    padding: 8px 14px!important;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255, 255, 255, .15);
+}
+
+
+/* ===========================
+   Cards
+=========================== */
+
+.card {
+    border: none;
+    border-radius: 14px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+
+/* ===========================
+   Labels
+=========================== */
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+/* ===========================
+   Inputs
+=========================== */
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    height: 45px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 8px rgba(13, 110, 253, .3);
+}
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn {
+    border-radius: 10px;
+    height: 45px;
+    font-weight: 600;
+}
+
+.btn-primary,
+.btn-success {
+    transition: .3s;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    transform: scale(1.02);
+}
+
+
+/* ===========================
+   Result Box
+=========================== */
+
+.result-box {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #eef4ff;
+}
+
+.result-box h6 {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.result-box h2 {
+    color: #0d47a1;
+    font-weight: 700;
+}
+
+.result-box.success {
+    background: #eefbf4;
+}
+
+.result-box.success h6,
+.result-box.success h2 {
+    color: #198754;
+}
+
+
+/* ===========================
+   Formula Box
+=========================== */
+
+.formula-box {
+    margin-top: 12px;
+    background: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.result-box.success+.formula-box {
+    border-left-color: #198754;
+}
+
+
+/* ===========================
+   Tables
+=========================== */
+
+.table th {
+    background: #f8f9fa;
+}
+
+.table td,
+.table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: #f3f7ff;
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+footer {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+.dark-mode .card {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.dark-mode .table {
+    color: #fff;
+}
+
+.dark-mode .table th {
+    background: #2c2c2c;
+}
+
+.dark-mode .table td {
+    background: #1f1f1f;
+}
+
+.dark-mode .formula-box {
+    background: #252525;
+    color: #fff;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background: #2d2d2d;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dark-mode .result-box {
+    background: #24334d;
+}
+
+.dark-mode .result-box.success {
+    background: #1d4032;
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+    .card-body {
+        padding: 18px;
+    }
+    .result-box h2 {
+        font-size: 26px;
+    }
+}
